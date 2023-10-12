@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Loan Calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+    <div class="calculator">
+
+      <div class="assa-logo"><h1>ASSA BANK</h1></div>
+
+      <div class="nav-section">
+        <ul class="nav-item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div>
+            <button class="nav-button">Sign In</button>
+            <button class="nav-button">Sign Up</button>
+        </div>
+    </div>
+
+      <h1>Loan Calculator</h1>
+
+      <div class="input-container">
+        <label for="loan-amount">Loan Amount ($):</label>
+        <input type="number" id="loan-amount" min="1" required />
+      </div>
+
+      <div class="input-container">
+        <label for="interest-rate">Annual Interest Rate (%):</label>
+        <input
+          type="number"
+          id="interest-rate"
+          min="0.01"
+          step="0.01"
+          required
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="loan-term">Loan Term (years):</label>
+        <input type="number" id="loan-term" min="1" required />
+      </div>
+
+      <button id="calculate">Calculate</button>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
